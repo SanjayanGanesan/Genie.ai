@@ -1,4 +1,6 @@
 
+import Logo from '../src/assets/Logo.png'
+
 
 type NavItem = "dashboard" | "conversations" | "booking" | "analytics" | "settings";
 
@@ -67,17 +69,14 @@ export default function Aside({ activeSection, onNavigate }: AsideProps) {
     <aside className="w-[20%] min-h-screen bg-gray-50 border-r border-gray-200 flex flex-col py-5">
       {/* Brand */}
       <div className="flex items-center gap-3 px-4 pb-6">
-        <div className="w-9 h-9 bg-[#2a2060] rounded-lg flex items-center justify-center shrink-0">
-          <svg viewBox="0 0 20 20" fill="white" width={18} height={18}>
-            <rect x="2" y="2" width="7" height="7" rx="1" />
-            <rect x="11" y="2" width="7" height="7" rx="1" />
-            <rect x="2" y="11" width="7" height="7" rx="1" />
-            <rect x="11" y="11" width="7" height="7" rx="1" />
-          </svg>
+        <div className="w-14 h-14 bg-[#2a2068] rounded-lg flex items-center justify-center shrink-0">
+          
+
+          <img src={Logo} alt='Logo_Genie'/>
         </div>
         <div>
           <p className="text-sm font-medium text-gray-900 leading-tight">
-            The Grand<br />Oasis
+            Genie.AI<br />Hospitality
           </p>
           <p className="text-[10px] text-gray-500 uppercase tracking-wider mt-0.5">
             Premium Tier
