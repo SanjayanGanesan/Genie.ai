@@ -64,7 +64,7 @@ interface AsideProps {
 
 export default function Aside({ activeSection, onNavigate }: AsideProps) {
   return (
-    <aside className="w-[220px] min-h-screen bg-gray-50 border-r border-gray-200 flex flex-col py-5">
+    <aside className="w-[20%] min-h-screen bg-gray-50 border-r border-gray-200 flex flex-col py-5">
       {/* Brand */}
       <div className="flex items-center gap-3 px-4 pb-6">
         <div className="w-9 h-9 bg-[#2a2060] rounded-lg flex items-center justify-center shrink-0">

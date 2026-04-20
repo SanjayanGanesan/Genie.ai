@@ -296,7 +296,7 @@ export const ConversationPanel: React.FC<ConversationPanelProps> = ({
         </div>
 
         {/* ── Guest Profile Sidebar (reduced to 220px) ── */}
-        <div style={{ width: 220, flexShrink: 0, background: "#fff", overflowY: "auto", padding: "18px 14px", display: "flex", flexDirection: "column" }}>
+        <div style={{ width: 350, flexShrink: 0, background: "#fff", overflowY: "auto", padding: "18px 14px", display: "flex", flexDirection: "column" }}>
 
           <p style={{ margin: "0 0 12px", fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase" as const, color: "#94a3b8" }}>Guest Profile</p>
 

@@ -11,7 +11,7 @@ export default function GenieHome() {
     <>
       <div className="flex">
         <Aside activeSection={activeSection} onNavigate={setActiveSection} />
-        <main>
+        <main className="w-[80%]">
 
                <ConversationPanel
       // ── Messages from your DB ──
