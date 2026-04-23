@@ -2,7 +2,8 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
-const postMessage = require('../routes/message.routes')
+const postMessage = require('../routes/message.routes');
+const receiveMessage = require('../routes/message.routes');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.get('/',(req,res)=>{
 
 
 app.use('/api/postMessage', postMessage);
+app.use('/api/receiveMessage', receiveMessage);
 
 app.listen(Port,()=>{
     console.log(`Server is Sucessfully running in ${Port}`)

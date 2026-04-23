@@ -23,4 +23,26 @@ const sendMessage = async (req, res) => {
   }
 };
 
-module.exports = { sendMessage };
+
+const receiveMessage = async (req,res)=>{
+  try{
+
+    const { conversationId } = req.params;
+   
+    const result = await pool.query(
+      `SELECT * FROM messages
+       WHERE conversation_id = $1
+       ORDER BY created_at ASC`,
+      [conversationId]
+    );
+
+    // 3. Send response
+    res.status(200).json(result.rows);
+
+  }catch(err){
+    console.log(err,"error");
+    res.status(500).json({ message: 'Error Occurred' });
+  }
+}
+
+module.exports = { sendMessage,receiveMessage };
